@@ -1,0 +1,28 @@
+/* wrapper */
+
+.wrapper {
+	/* use grid to implement sticky footer */
+	display: grid;
+	grid-template-rows: 1fr auto;
+	min-height: 100%;
+}
+
+/* main */
+
+main {
+	width: 66%;
+	margin-left: auto;
+  margin-right: auto;
+  /* for including position fixed header */
+  padding-top: 15.6rem;
+}
+
+/* sticky footer */
+
+footer {
+	height: 6.5rem;
+	padding: 1rem 3.6rem 1.6rem 1rem;
+	line-height: 1.5;
+	/* use grid to implement sticky footer */
+  grid-row: 2 / 3;
+}

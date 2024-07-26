@@ -1,0 +1,50 @@
+:root {
+	--main-color: #164;
+	--light-color: #0D8;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/* for percent height */
+	height: 100%;
+	/* for rem calculate */
+	font-size: 62.5%;
+	font-family: Georgia, 'Source Han Sans CN', 'Xin Gothic', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+	color: #3A4145;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	height: 100%;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	background: #ECF0F1;
+}
+
+a {
+	text-decoration: none;
+	color: #2c3e50;
+	-webkit-transition: color 0.36s;
+	transition: color 0.36s;
+}
+
+a:hover {
+	color: var(--light-color);
+}
+
+p {
+	margin: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
